@@ -2,7 +2,7 @@ __pycache__
 .ipynb_checkpoints
 results
 saved_summary_model
-samsun-test.csv
-samsun-train.csv
-samsun-validation.csv
-text_summarizer,ipynb
+samsum-test.csv
+samsum-train.csv
+samsum-validation.csv
+text_summarizer.ipynb
