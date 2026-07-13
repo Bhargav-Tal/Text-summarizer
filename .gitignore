@@ -1,8 +1,0 @@
-__pycache__
-.ipynb_checkpoints
-results
-saved_summary_model
-samsum-test.csv
-samsum-train.csv
-samsum-validation.csv
-text_summarizer.ipynb
