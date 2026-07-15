@@ -1,29 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Summarizer</title>
+
+    <title>AI Text Summarizer</title>
+
     <link rel="stylesheet" href="/static/app.css">
     <script src="/static/app.js" defer></script>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Text Summarizer</h1>
-        <h3>using HuggingFace Transformer</h3>
-        <p>Write or Paste your content below for quick summarization.</p>
 
-        <form id="summarization-form">
-            <textarea id="dialogue-input" placeholder="Enter your content here..." required></textarea>
-            <button type="submit">Summarize</button>
-        </form>
+    <main class="container">
 
-        <div id="summary-output">
-            <h3 id="summary-heading">Content Summary</h3>
-            <p id="summary-text"></p>
-        </div>
-    </div>
+        <header class="header">
+            <div class="badge">AI POWERED</div>
 
- 
+            <h1>Text <span>Summarizer</span></h1>
+
+            <h3>Powered by Hugging Face Transformers</h3>
+
+            <p>
+                Transform long content into clear and concise summaries
+                using transformer-based artificial intelligence.
+            </p>
+        </header>
+
+
+        <section class="summarizer-card">
+
+            <form id="summarization-form">
+
+                <div class="textarea-header">
+                    <label for="dialogue-input">Your Content</label>
+                    <span id="character-count">0 characters</span>
+                </div>
+
+                <textarea
+                    id="dialogue-input"
+                    placeholder="Paste your article, dialogue, report or content here..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    <span>✨</span>
+                    Summarize Content
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section id="summary-output">
+
+            <div class="summary-header">
+                <h3 id="summary-heading">Content Summary</h3>
+                <span class="summary-badge">AI Summary</span>
+            </div>
+
+            <p id="summary-text">
+                Your generated summary will appear here.
+            </p>
+
+        </section>
+
+
+        <footer>
+            Built using Hugging Face Transformers
+        </footer>
+
+    </main>
+
 </body>
+
 </html>
